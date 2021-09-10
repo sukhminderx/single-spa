@@ -1,0 +1,22 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <nav>
+    <application name="@spa/header"></application>
+  </nav>
+  <route path="test">
+    <div style="position: fixed;
+    bottom: 16px;"><application name="@spa/test"></application></div>
+  </route>
+  <route path="home">
+    <div style="position: fixed;
+    right: 16px;">  <application name="@spa/home"></application></div>
+  </route>
+
+
+</single-spa-router>
